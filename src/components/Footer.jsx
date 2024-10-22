@@ -1,14 +1,13 @@
 import React from 'react'
+import '../styles/footer.css'
 
 const Footer = () => {
   return (
     <div>
       <footer>
-      <p>© 2024 My Landing Page. All Rights Reserved.</p>
+      <p>© 2024 Mariano Trogo. All Rights Reserved.</p>
       <div>
-        <a href="#facebook">Facebook</a>
-        <a href="#twitter">Twitter</a>
-        <a href="#instagram">Instagram</a>
+      
       </div>
     </footer>
     </div>
