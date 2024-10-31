@@ -1,13 +1,14 @@
 header{
     position: relative;
-   
     z-index: 1000;
     background-color: #343434;
+    padding: 10px 0;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px 20px;
     transition: all 0.3s ease;
 }
@@ -23,7 +24,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
     transition: max-height 0.5s ease;
 }
 
@@ -54,30 +54,34 @@ nav{
     nav{
         flex-direction: row;
         align-items: center;
+        padding: 10px;
     }
+
     .nav-menu{
         position: absolute;
         top: 120px;
         left: 0;
         right: 0;
         margin: 0;
-        width: 87vw;
-        height: 40vh;
-        background-color: rgba(40, 33, 33, 0.9);
+        width: 100%;
+        background-color: rgba(40, 33, 33, 0.95);
         flex-direction: column;
         max-height: 0;
+        overflow: hidden;
         transition: max-height 0.5s ease;
         align-items: flex-start;
+    }
+
+    .nav-menu li{
+        margin: 10px 0;
     }
 
     .nav-menu a{
         color: #fff;
     }
 
-    .nav-menu.active{
-        display: flex;
+    .nav-menu.active{    
         max-height: 300px;
-        flex-direction: column;
     }
 
     .hamb-menu{
@@ -85,4 +89,22 @@ nav{
         
     }
     
+}
+
+@media (max-width: 480px){
+    .nav-menu{
+        top: 120px;
+    }
+
+    .nav-menu li{
+        margin: 8px 0;
+    }
+
+    .nav-menu a{
+        font-size: 16px;
+    }
+
+    .hamb-menu{
+        margin-right: 20px;
+    }
 }

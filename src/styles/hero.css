@@ -8,6 +8,7 @@
     align-items: center;
     position: relative;
     color: #fff;
+    padding: 10px;
 }
 
 .overlay{
@@ -15,6 +16,7 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 90%;
 }
 
 h1{
@@ -27,8 +29,8 @@ p{
 }
 
 button{
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 0.9rem;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -41,9 +43,21 @@ button:hover{
 
 @media (max-width: 768px){
     .hero{
-        width: 100%;
         height: auto;
-        background-position: center;
-        background-size: cover;
+        padding: 10px;
     }
+    .overlay{
+        width: 100vw;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+p{
+    font-size: 1rem;
+}
+button{
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+
 }

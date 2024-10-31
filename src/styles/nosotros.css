@@ -1,73 +1,85 @@
 .features {
-    padding: 20px;
-    display: flex;
-    gap: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.person-card,
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin: 15px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card-content {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .person-card {
-    display: flex;
-    align-items: center;
-    
-    justify-content: center; /* Centramos las imágenes */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+
+  .person-card, .info-card{
+    flex-direction: column;
+    padding: 15px;
+    max-width: 90vw;
   }
-  
-  .profile-pic {
-    width: 120px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10%;
-    margin: 20px;
+
+  .profile-pic{
+    width: 80px;
+    height: 100px;
+    margin: 10px;
   }
-  
-  .info-card {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 40px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-  
-  .card-content {
-    padding-left: 20px;
-    text-align: left;
-  }
-  
+
+.card-content{
+  padding-left: 10px ;
+  text-align: center;
+}
   .card-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
   }
-  
+
+
+
   .card-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+    font-size: 13px;
   }
-
-  @media (max-width: 768px){
-    .features{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-content h3{
-        font-size: 18px;
-    }
-
-    .card-content p{
-        font-size: 14px;
-    }
-  }
+}
